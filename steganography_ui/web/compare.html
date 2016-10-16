@@ -1,0 +1,24 @@
+{% block extra_scripts %}
+<script type="text/javascript" src="/js/bootstrap-select.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap-select.css" > 
+{% end %}
+
+<div id="compare_container">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    {% for document in documents %}
+                    <th style="width: {{ col_width }}%;"> <a href= {{ document['link'] }}>{{ document['name'] }}</a></th>
+                    {% end %}
+                    <th style="width: 10%;">
+                        Transformations
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% include "transformed_rows.html" %}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block extra_scripts %}
+<script src="/js/jquery.ui.widget.js"></script>
+<script src="/js/jquery.iframe-transport.js"></script>
+<script src="/js/jquery.fileupload.js"></script>
+<script src="/js/my_handlers.js"></script>
+{% end %}
+
+{% block body %}
+<body onload="onLoadHandler()">
+    <div id="fileSection">
+        <input id="fileupload" type="file" name="myFile" data-url="/upload" multiple>
+        <br/>
+        <div id="progress">
+            <div class="bar" style="width: 0%; height: 18px; background: green;"></div>
+        </div>
+</div>
+
+    </body>
+{% end %}
+
+

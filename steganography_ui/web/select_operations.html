@@ -1,0 +1,7 @@
+<select class="selectpicker span1" id="selectpicker{{ num_selects }}"data-width="auto" data-style="btn-primary">
+    <option>Transform</option>
+    {% for operation in operations %}
+    <option> {{ operation }} </option>
+    {% end %}
+</select>
+

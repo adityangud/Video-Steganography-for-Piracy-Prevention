@@ -1,0 +1,4 @@
+Embedder preprocesses the frames into one's and zero's.
+Not to be run on cpu. 
+Use computer with GPU
+Time and computation intensive task

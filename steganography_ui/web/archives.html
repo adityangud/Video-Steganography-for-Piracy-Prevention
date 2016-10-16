@@ -1,0 +1,26 @@
+<div id="archive" class="row">
+    <div class="col-sm-8">
+        <div class="table-responsive">
+            <table class="table table-bordered " id="archiveTable">
+                <thead>
+                    <tr>
+                        <th> Name </th>
+                        <th> Size (bytes)</th>
+                        <th> Last Modified </th>
+                    </tr>
+                </thead>
+                {% for document in documents %}
+                    <tr>
+                        <td> {{ document['name'] }}</td>
+                        <td> {{ document['size'] }}</td>
+                        <td> {{ document['last-modified'] }}</td>
+                    </tr>
+                {% end %}
+            </table>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <button class="btn" id="archiveCompareBtn">  Compare </button>
+
+    </div>
+</div>

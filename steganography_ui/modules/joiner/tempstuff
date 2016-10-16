@@ -1,0 +1,4 @@
+NORMAL_FOLDER=/media/anthony/Seagate1/SplitFrames/Godzilla/Frames
+OUTPUT_FOLDER=/media/anthony/Seagate/godzilla_stego_frames
+EMBED_ONE=/media/anthony/Seagate/EmbedFrames/Godzilla/embed_1
+EMBED_ZERO=/media/anthony/Seagate1/EmbedFrames/Godzilla/embed_0

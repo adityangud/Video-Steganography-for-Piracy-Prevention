@@ -1,0 +1,28 @@
+1. MODULES
+    tree modules/
+
+2. Splitter
+    move to splitter/
+
+3. EMBEDDER 
+    move to embedder/
+    SHOW FILES IN /media/anthony/Seagate3/EmbedFrames/Spidey/
+    Normal frames in /media/anthony/Seagate/SplitFrames/
+
+4. Calc luminance
+    move to calc_luminance/
+    play calc_luminance video
+
+5. Joiner
+    move to joiner/
+    NORMAL /media/anthony/Seagate/SplitFrames/Spidey/Frames
+    ONE  /media/anthony/Seagate3/EmbedFrames/Spidey/embed_1
+    ZERO  /media/anthony/Seagate3/EmbedFrames/Spidey/embed_0
+
+    bash runner.sh
+
+6. Decoder
+    move to decoder
+    Show on webpage
+
+

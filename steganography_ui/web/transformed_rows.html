@@ -1,0 +1,11 @@
+<tr>
+    {% for document in documents %}
+    <td filename={{document['name']}} compatiable={{document['compatiable']}}>
+        <img src="{{ document['image_link'] }}" alt="graph of {{ document['name'] }}" class="img-responsive"/>
+    </td>
+    {% end %}
+    <td>
+        {% include "select_operations.html" %}
+    </td>
+</tr>
+

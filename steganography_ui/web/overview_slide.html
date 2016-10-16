@@ -1,0 +1,35 @@
+<div id="overview_carousel_id" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#overview_carousel_id" data-slide-to="0" class="active"></li>
+        {% for slide in xrange(1,num_slides) %}
+        <li data-target="#overview_carousel_id" data-slide-to="{{ slide }}"></li>
+        {% end %}
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active" id="stegoSlide0">
+            <img alt="background_image" src="/images/carousel_background.jpg" style="width: 100%;"/>
+            <div class="carousel-caption">
+                {% raw slides[0] %}
+            </div>
+        </div>
+
+        {% for i in xrange(1, num_slides) %}
+        <div class="item" id="stegoSlide{{i}}">
+            <img alt="background_image" src="/images/carousel_background.jpg" style="width: 100%;"/>
+            <div class="carousel-caption">
+                {% raw slides[i] %}
+            </div>
+        </div>
+{% end %}
+
+    </div>
+
+    <a class="left carousel-control" href="#overview_carousel_id" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <a class="right carousel-control" href="#overview_carousel_id" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>

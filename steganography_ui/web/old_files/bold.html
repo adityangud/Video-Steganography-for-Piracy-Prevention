@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block title %}A bolder title{% end %}
+
+{% block student %}
+  <li><span style="bold">{{ escape(student.name) }}</span></li>
+{% end %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<p> <h1> Select and upload </h1> </p>
+<form enctype="multipart/form-data" action="/upload" method="post">
+    File: <input type="file" name="filearg" />
+    <br/>
+    <input type="submit" value="upload" />
+</form>
+{% end %}

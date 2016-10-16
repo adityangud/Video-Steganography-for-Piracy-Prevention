@@ -1,0 +1,38 @@
+<div id="detector_div">
+
+    <div class="row">
+        <div class="col-sm-6">
+                <img src="/images/capture_1.jpg"  class="img-responsive"/>
+         </div>
+
+         <div class="col-sm-6">
+                <img src="/images/capture_2.jpg"  class="img-responsive"/>
+         </div>
+    </div>
+
+    <h1> Detector </h1>
+
+    {% if bitstring %}
+        <p> The result is : {{ bitstring }} </p>
+    {% end %}
+
+    <br/>
+    <p> Given two files containing the luminance values , as well as the configuration file, it will return the detected code </p>
+
+    <form id="detectorForm" action="/do-detection/" enctype="multipart/form-data" method="POST">
+        <label> Original File <input type="file" name="original_file"/> </label>
+        <br/>
+        <label> Recorded File <input type="file" name="recorded_file"/> </label>
+        <br/>
+        <label> Min Robustness <input type="text" name="min_robustness"/></label>
+        <br/>
+        <label> Normal Size    <input type="text" name="normal_size"/></label>
+        <br/>
+        <label> Bitstring Size    <input type="text" name="bitstring_size"/></label>
+        <br/>
+        <label> Bucket Size    <input type="text" name="bucket_size"/></label>
+        <input type="submit" value="GO"/>
+
+    </form>
+
+</div>
